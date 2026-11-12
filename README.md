@@ -4,6 +4,17 @@
 
 **Question:** Do velocity and shared-entity features add signal beyond the baseline?
 
+## Portfolio
+
+| ID | Repository | Focus |
+|---|---|---|
+| FD01 | [fraud-logistic-baseline](https://github.com/Patotricks15/fraud-logistic-baseline) | Logistic baseline |
+| FD02 | [fraud-cost-sensitive-xgboost](https://github.com/Patotricks15/fraud-cost-sensitive-xgboost) | Cost-sensitive XGBoost |
+| FD03 | [fraud-unsupervised-anomaly](https://github.com/Patotricks15/fraud-unsupervised-anomaly) | Isolation Forest and LOF |
+| **FD04** | **fraud-velocity-graph-features** (this repo) | Velocity and graph features (blocked) |
+| FD05 | [fraud-threshold-cost-policy](https://github.com/Patotricks15/fraud-threshold-cost-policy) | Cost-based threshold policy |
+| FD06 | [fraud-drift-monitoring](https://github.com/Patotricks15/fraud-drift-monitoring) | Drift monitoring |
+
 ## Planned method
 
 - Velocity features per entity: `velocity_k(card, t) = count(tx where time in (t - k, t])` and the matching sums, for `k` = 1 hour, 24 hours and 7 days. Computed on sorted data with a strict `shift`, so no feature uses the current transaction.
